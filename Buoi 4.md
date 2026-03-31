@@ -384,15 +384,9 @@ startActivity(intent)
 ### 4.2 Chuyển Màn Đơn Giản
 
 ```kotlin
-// Cách 1: Thông thường
 btnGoToDetail.setOnClickListener {
     val intent = Intent(this, DetailActivity::class.java)
     startActivity(intent)
-}
-
-// Cách 2: Dùng extension (ngắn hơn)
-btnGoToDetail.setOnClickListener {
-    startActivity<DetailActivity>()  // Cần import androidx.core.content.ContextCompat
 }
 ```
 
